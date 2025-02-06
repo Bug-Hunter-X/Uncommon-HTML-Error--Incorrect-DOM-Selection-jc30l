@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Correct way to select an element by ID
+    var myDiv = document.getElementById("myDiv");
+    if (myDiv) {
+        myDiv.innerHTML = "This text is added by Javascript";
+    } else {
+        console.error("Element with ID 'myDiv' not found.");
+    }
+  </script>
+</body>
+</html>
